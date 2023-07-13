@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Imgur App</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="about">About</string>
+    <string name="press_back_again">Press back again to exit</string>
+    <string name="no_image_items_found">No Image Items Found</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="find">Find Pictures by title</string>
+    <string name="search_images">Search</string>
+    <string name="error_loading_web">Error loading the webpage</string>
+    <string name="share">Share</string>
+    <string name="geeric_error">An unknown error occurred, please try again later</string>
+    <string name="internet_connection_error">Please check your internet connection and try again</string>
+    <string name="too_many_requests">Too Many Requests</string>
+    <string name="error_creating_news">An error occurred while creating news item</string>
+    <string name="show_more_desc">Show More</string>
+</resources>

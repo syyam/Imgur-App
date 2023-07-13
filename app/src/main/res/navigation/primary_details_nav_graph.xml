@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/item_list_fragment">
+
+    <fragment
+        android:id="@+id/item_list_fragment"
+        android:name="com.syyamnoor.imgurapp.ui.list.ImageListFragment"
+        android:label="ItemListFragment"
+        tools:layout="@layout/fragment_item_list"
+        >
+        <action
+            android:id="@+id/show_search_fragment"
+            app:destination="@id/item_search_fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/item_search_fragment"
+        android:name="com.syyamnoor.imgurapp.ui.search.SearchImageListFragment"
+        android:label="item_detail"
+        tools:layout="@layout/fragment_search_item_list">
+        <action
+            android:id="@+id/show_home_fragment"
+            app:destination="@id/item_list_fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+</navigation>

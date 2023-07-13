@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:paddingStart="@dimen/margin_medium"
+    android:paddingTop="@dimen/margin_medium"
+    android:paddingEnd="@dimen/margin_medium"
+    android:paddingBottom="@dimen/margin_medium">
+
+    <ImageView
+        android:id="@+id/imageView_feature"
+        android:layout_width="@dimen/list_item_image"
+        android:layout_height="@dimen/list_item_image"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="0dp"
+        android:textSize="@dimen/title_text_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:ellipsize="end"
+        android:maxLines="@integer/max_lines_default"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textView_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView_feature"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/textView_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:ellipsize="end"
+        android:maxLines="@integer/max_lines_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title"
+        tools:text="Desc" />
+
+    <TextView
+        android:id="@+id/textView_topic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:ellipsize="end"
+        android:maxLines="@integer/max_lines_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_desc"
+        tools:text="topic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
