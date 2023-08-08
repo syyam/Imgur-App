@@ -36,7 +36,7 @@ class ImageListViewModel @Inject constructor(
         val uiStateValue = _uiState.value ?: ListUiState()
         when (listUiEvent) {
             is ListUiEvent.Search -> {
-                val newQuery = if (listUiEvent.query == null || listUiEvent.query.isBlank()) null
+                val newQuery = if (listUiEvent.query.isNullOrBlank()) null
                 else listUiEvent.query.trim()
                 // Nothing has changed
                 if (newQuery == uiStateValue.query)
